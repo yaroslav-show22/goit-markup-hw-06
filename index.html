@@ -52,11 +52,25 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>Soc link</div>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="hero-section">
+      <section class="hidden">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button" data-modal-open>
@@ -65,7 +79,7 @@
         </div>
       </section>
 
-      <section class="features-section">
+      <section class="hidden">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="features-list">
@@ -121,7 +135,7 @@
         </div>
       </section>
 
-      <section class="team-section">
+      <section class="hidden">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -297,7 +311,7 @@
         </div>
       </section>
 
-      <section class="portfolio-section">
+      <section class="hidden">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -406,7 +420,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="hidden">
       <div class="footer-container">
         <div class="footer-logo-text">
           <a class="logo footer-logo" href="./index.html"
@@ -472,7 +486,7 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
@@ -556,5 +570,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
